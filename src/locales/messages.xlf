@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="appName" datatype="html">
+        <source>M&amp;D Delivery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appDescription" datatype="html">
+        <source> Your reliable service for food orders and delivery. We offer a wide selection of dishes from the best restaurants in your city. Delivered quickly and efficiently, so you can enjoy your favorite meals anytime. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">5,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyChooseUs" datatype="html">
+        <source>Why Choose Us?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature1" datatype="html">
+        <source>🔍 A large selection of restaurants and dishes for every taste.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature2" datatype="html">
+        <source>⏱️ Fast delivery right to your doorstep.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature3" datatype="html">
+        <source>📦 Convenient ordering and real-time tracking.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature4" datatype="html">
+        <source>💸 Affordable prices and regular promotions for our customers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="howItWorks" datatype="html">
+        <source>How It Works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="step1" datatype="html">
+        <source>Select your favorite dishes from our app or website.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="step2" datatype="html">
+        <source>Place your order with a few simple clicks.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="step3" datatype="html">
+        <source>Track your delivery in real-time and enjoy your meal!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getStarted" datatype="html">
+        <source>Get Started Today!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getStartedDescription" datatype="html">
+        <source> Download our app or visit our website to place your first order and experience the best in food delivery. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="orderNow" datatype="html">
+        <source>Order Now</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/main.component.html</context>
+          <context context-type="linenumber">33,36</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
