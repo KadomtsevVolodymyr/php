@@ -9,13 +9,8 @@ class ServiceController extends Controller
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request, $id)
     {
-        $input = $request->input("key");
-        if ($input === 'special') {
-            return redirect('/special-page');
-        } else {
-            return redirect('/');
-        }
+        return view('service', ['id' => $id]);
     }
 }
