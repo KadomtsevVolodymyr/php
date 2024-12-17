@@ -1,92 +1,108 @@
 <form [formGroup]="loginForm">
   <div class="mb-3">
-    <label class="form-label">
+    <label class="form-label" i18n="Label for the username field@@usernameLabel">
       Username:
       <input type="text" formControlName="username" class="form-control" [formControl]="loginForm.controls.username" />
       <div *ngIf="loginForm.get('username')?.touched">
-        <div *ngIf="loginForm.get('username')?.errors?.['required']">
+        <div *ngIf="loginForm.get('username')?.errors?.['required']"
+          i18n="Error message when username is required@@usernameRequiredError">
           <p class="text-danger">
             Username is required
           </p>
         </div>
       </div>
-      <div *ngIf="loginForm.get('username')?.errors?.['minlength']">
+      <div *ngIf="loginForm.get('username')?.errors?.['minlength']"
+        i18n="Error message when username is too short@@usernameMinLengthError">
         <p class="text-danger">
           Min length is 5
         </p>
       </div>
     </label>
   </div>
+
   <div class="mb-3">
-    <label class="form-label">
+    <label class="form-label" i18n="Label for the first name field@@firstNameLabel">
       First Name:
       <input type="text" class="form-control" [formControl]="loginForm.controls.bio.controls.firstName" />
-      <div *ngIf="loginForm.get('bio.firstName')?.errors?.['required'] && loginForm.get('bio.firstName')?.touched">
+      <div *ngIf="loginForm.get('bio.firstName')?.errors?.['required'] && loginForm.get('bio.firstName')?.touched"
+        i18n="Error message when first name is required@@firstNameRequiredError">
         <p class="text-danger">
           First name is required
         </p>
       </div>
     </label>
   </div>
+
   <div class="mb-3">
-    <label class="form-label">
+    <label class="form-label" i18n="Label for the last name field@@lastNameLabel">
       Last name:
       <input type="text" class="form-control" [formControl]="loginForm.controls.bio.controls.lastName" />
-      <div *ngIf="loginForm.get('bio.lastName')?.errors?.['required'] && loginForm.get('bio.lastName')?.touched">
+      <div *ngIf="loginForm.get('bio.lastName')?.errors?.['required'] && loginForm.get('bio.lastName')?.touched"
+        i18n="Error message when last name is required@@lastNameRequiredError">
         <p class="text-danger">
           Last name is required
         </p>
       </div>
     </label>
   </div>
+
   <div class="mb-3">
-    <label class="form-label">
+    <label class="form-label" i18n="Label for the age field@@ageLabel">
       Age:
       <input type="number" class="form-control" [formControl]="loginForm.controls.bio.controls.age" />
-      <div *ngIf="loginForm.get('bio.age')?.errors?.['required'] && loginForm.get('bio.age')?.touched">
+      <div *ngIf="loginForm.get('bio.age')?.errors?.['required'] && loginForm.get('bio.age')?.touched"
+        i18n="Error message when age is required@@ageRequiredError">
         <p class="text-danger">
-          Last name is required
+          Age is required
         </p>
       </div>
     </label>
   </div>
+
   <div class="mb-3">
-    <label class="form-label">
+    <label class="form-label" i18n="Label for the email field@@emailLabel">
       Email:
       <input type="email" class="form-control" [formControl]="loginForm.controls.email" />
     </label>
-    <div *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">
+    <div *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched"
+      i18n="Error message when email is required@@emailRequiredError">
       <p class="text-danger">
         Email is required
       </p>
     </div>
   </div>
+
   <div class="mb-3">
-    <label class="form-label">
+    <label class="form-label" i18n="Label for the password field@@passwordLabel">
       Password:
       <input type="password" class="form-control" [formControl]="loginForm.controls.password" />
     </label>
     <div *ngIf="loginForm.get('password')?.touched">
-      <div *ngIf="loginForm.get('password')?.errors?.['required']">
+      <div *ngIf="loginForm.get('password')?.errors?.['required']"
+        i18n="Error message when password is required@@passwordRequiredError">
         <p class="text-danger">
           Password is required
         </p>
       </div>
-      <div *ngIf="loginForm.get('password')?.errors?.['minlength']">
+      <div *ngIf="loginForm.get('password')?.errors?.['minlength']"
+        i18n="Error message when password is too short@@passwordMinLengthError">
         <p class="text-danger">
           Min length is 5
         </p>
       </div>
     </div>
   </div>
+
   <div class="">
-    <button type="submit" (click)="login()" class="btn btn-primary">Login</button>
-    <button type="submit" (click)="updateLogin()" class="btn btn-success">Update</button>
+    <button type="submit" (click)="login()" class="btn btn-primary" i18n="Button text for login@@loginButton">
+      Login
+    </button>
+    <button type="submit" (click)="updateLogin()" class="btn btn-success" i18n="Button text for update@@updateButton">
+      Update
+    </button>
   </div>
 </form>
 
-
 <pre>
-  {{loginForm.value | json }}
+  {{ loginForm.value | json }}
 </pre>
-
